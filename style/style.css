@@ -8,7 +8,7 @@ body {
 .container {
     display: flex;
     justify-content: space-between;
-    width: 75%; /* Ancho del contenedor ajustable según sea necesario */
+    width: 75%;
 }
 
 .columna {
