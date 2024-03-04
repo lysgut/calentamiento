@@ -5,6 +5,28 @@ let mezclarBotton = document.getElementById("mezclar");
 let reiniciar = document.getElementById("reiniciar")
 let puntajeText = document.getElementById('puntaje')
 let puntaje = 0
+
+
+function seleccionadoHacer(x){
+    let elemento = ""
+    switch (x) {
+        case "1":
+            elemento = "oro"
+            break;
+        case '2':
+            elemento = "hierro"
+            break;
+        case '3':
+            elemento = "redstone"
+            break;
+        case '0':
+            elemento = 'diamante'
+            break;
+        default:
+            break;
+    }
+    return elemento
+}
 let minecraft = [
     {
         url: 'https://tse1.mm.bing.net/th/id/OIP.Bbxg0MzSY3IC8cKKisieGAAAAA?rs=1&pid=ImgDetMain',
@@ -59,25 +81,7 @@ let minecraft = [
   }
 
 
-function checkCombination(){
-    if(combination[0] != 'n' && combination[1] != 'n'){
-        if(combination[0] === combination[1]){
-            alert("Bien hecho!  😁😁😁😁🤩💯💯")
-            combination = ['n','n']
-            puntaje += 100
-            puntajeText.innerText = puntaje
-            return true
-        }
-        else{
-            alert("Respuesta incorrecta ❌❌🚫 Sigue Intentando ")
-            combination = ['n','n']
-            puntaje -= 100
-            puntajeText.innerText = puntaje
-            return false
-        }
 
-    }
-}
 
 
 mezclarBotton.addEventListener("click", function(){
@@ -87,7 +91,6 @@ mix(real)
 
 botonesI.forEach(function(botonI, i) {
     let materialI = minecraft[i];
-
     botonI.querySelector("img").src = materialI.url;
     botonI.id = materialI.id;
     botonI.value = materialI.value;
@@ -96,7 +99,6 @@ botonesI.forEach(function(botonI, i) {
 
 botonesD.forEach(function(botonD, i) {
     let materialD = real[i];
-
     botonD.querySelector("img").src = materialD.url;
     botonD.id = materialD.id;
     botonD.value = materialD.value;
@@ -132,3 +134,23 @@ botonesD.forEach(function(botonD) {
 reiniciar.addEventListener("click", function() {
     location.reload();
 });
+
+function checkCombination(){
+    if(combination[0] != 'n' && combination[1] != 'n'){
+        if(combination[0] === combination[1]){
+            alert("Bien hecho!  😁😁😁😁🤩💯💯")
+            combination = ['n','n']
+            puntaje += 100
+            puntajeText.innerText = puntaje
+            return true
+        }
+        else{
+            alert("Respuesta incorrecta ❌❌🚫 Sigue Intentando ")
+            combination = ['n','n']
+            puntaje -= 100
+            puntajeText.innerText = puntaje
+            return false
+        }
+
+    }
+}
