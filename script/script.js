@@ -27,24 +27,25 @@ function seleccionadoHacer(x){
     }
     return elemento
 }
+//0 diamante , 1 oro, 2 plata, 3 
 let minecraft = [
     {
-        url: 'https://tse1.mm.bing.net/th/id/OIP.Bbxg0MzSY3IC8cKKisieGAAAAA?rs=1&pid=ImgDetMain',
+        url: 'https://www.pngall.com/wp-content/uploads/2016/03/Minecraft-Diamond-PNG.png',
         id: '0i',
         value: '0'
     },
     {
-        url: 'https://tse1.mm.bing.net/th/id/OIP.KYkR19B0B0X6Md5FtlsfewAAAA?rs=1&pid=ImgDetMain',
+        url: 'https://lh3.bunny.novaskin.me/xGMFMIfzD9ys7L26Z-0C6Vd_2aVq8gXa3qjp-6XDkrzEvBdcStXVcOg33xu9Jm80uD5bfUNqzNxdbUaHY4JV7dL3lmZzHlBkNaHD=rw-h400',
         id: '1i',
         value: '1'
     },
     {
-        url: 'https://tse3.mm.bing.net/th/id/OIP.191lHaRzPklSLvjjVHPSEAAAAA?rs=1&pid=ImgDetMain',
+        url: 'https://tekkitwiki.com/w/images/tekkitwiki/6/6b/Grid_Iron_Ingot.png',
         id: '2i',
         value: '2'
     },
     {
-        url:'https://tse4.mm.bing.net/th/id/OIP.fie5NHyvlU5EnfJQ6X0IfwAAAA?rs=1&pid=ImgDetMain',
+        url:'https://tekkitwiki.com/w/images/tekkitwiki/thumb/a/af/Redstone_Dust.png/208px-Redstone_Dust.png',
         id: '3i',
         value: '3'
     }
@@ -53,22 +54,22 @@ let minecraft = [
 
     let real = [
     {
-        url: 'https://www.pawnshop.es/wp-content/uploads/2018/12/diamond-500872_1280.jpg',
+        url: 'https://i.pinimg.com/originals/73/04/6e/73046e2b5eaf644fe5f52f05bd3f7e77.png',
         id: '0d',
         value: '0'
     },
     {
-        url: 'https://tse4.mm.bing.net/th/id/OIP.j7d7ScSqV6PyboRJSxqL5QHaGH?rs=1&pid=ImgDetMain',
+        url: 'https://www3.gobiernodecanarias.org/medusa/mediateca/ecoescuela/wp-content/uploads/sites/2/2013/11/10-Lingote-de-oro.png',
         id: '1d',
         value: '1'
     },
     {
-        url:'https://th.bing.com/th/id/R.f9d3c06d4fa79b01f7a61b45622d694d?rik=hVbDJb1J9JoSFQ&pid=ImgRaw&r=0',
+        url:'https://satisfactory.wiki.gg/images/5/5f/Iron_Rod.png',
         id: '2d',
         value: '2'
     },
     {
-        url:'https://mineralesyrocas.com/wp-content/uploads/rubi.jpg',
+        url:'https://static.vecteezy.com/system/resources/previews/027/125/671/original/red-ruby-diamond-isolated-on-transparent-background-precious-stone-jewelry-generative-ai-png.png',
         id: '3d',
         value: '3'
     }]

@@ -1,8 +1,23 @@
+.btn-transparent {
+    background-color: transparent;
+    color: #fff; /* Color del texto en los botones transparentes */
+    border-color: #fff; /* Color del borde en los botones transparentes */
+}
+
+/* Añade estos estilos a tus botones específicos */
+#mezclar, #reiniciar {
+    margin-top: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0;
+    background-color: #212529 !important;
+    color: #fff !important;
 }
 
 .container {
@@ -32,16 +47,29 @@ body {
     margin-top: 20px;
 }
 
-
 #puntaje {
     text-align: center;
     font-size: 18px;
-    margin-top: 10px; /* Ajusta según sea necesario */
+    margin-top: 10px;
 }
 
 #titulo {
     text-align: center;
     font-size: 24px;
     font-weight: bold;
-    margin-top: 10px; /* Ajusta según sea necesario */
+    margin-top: 10px;
+}
+
+/* Estilo para hacer que la navbar ocupe todo el ancho de la pantalla */
+.navbar {
+    width: 100%;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar-nav {
+    width: 100%;
+    justify-content: flex-end;
 }
