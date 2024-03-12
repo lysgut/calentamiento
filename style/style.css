@@ -94,8 +94,6 @@ body {
     text-align: center;
     text-transform: none;
     touch-action: manipulation;
-    user-select: none;
-    -webkit-user-select: none;
     vertical-align: middle;
     white-space: nowrap;
   }
